@@ -1,0 +1,32 @@
+body {
+  background-color: black;
+  font-family: monospace;
+  color: white;
+}
+.terminal-container {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+}
+.prompt {
+  display: inline-block;
+}
+.blinking-cursor {
+  background-color: white;
+  width: 2px;
+  height: 20px;
+  display: inline-block;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
